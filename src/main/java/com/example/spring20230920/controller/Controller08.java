@@ -3,9 +3,12 @@ package com.example.spring20230920.controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @org.springframework.stereotype.Controller
 @RequestMapping("main8")
-public class Controller8 {
+public class Controller08 {
 
     @RequestMapping("sub1")
     public  void method1(Model model){
@@ -16,7 +19,15 @@ public class Controller8 {
 
     @RequestMapping("sub2")
     public void method(Model model){
+        String name = "java Spring";
+        String [] arr = {"👍👍👍","😡😡😡","😊😊😊😊","👌👌👌👌"};
+        List<String> list = new ArrayList<>();
+
+        for(String n : arr){
+            list.add(n);
+        }
+
         model.addAttribute("propone","👍👍👍");
-        model.addAttribute("propTWO","😒😒😒");
+        model.addAttribute("propTWO",list);
     }
 }
