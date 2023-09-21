@@ -21,4 +21,10 @@ public class Controller01 {
     public void method3(){
         System.out.println("Controller01.method3");
     }
+
+    @RequestMapping("path3")
+    public  void method4(){
+        System.out.println("Controller01.method4");
+
+    }
 }
