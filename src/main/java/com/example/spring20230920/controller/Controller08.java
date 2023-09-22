@@ -30,4 +30,14 @@ public class Controller08 {
         model.addAttribute("propone","👍👍👍");
         model.addAttribute("propTWO",list);
     }
+
+    @RequestMapping("sub3")
+    public void method3(Model model) {
+        // view name : /main8/sub3
+        // /WEB-INF/jsp/main8/sub3.jsp
+        model.addAttribute("myName","손흥민");
+        model.addAttribute("yourAddress","런던");
+        model.addAttribute("herEmail","aaa@aaa.com");
+
+    }
 }
