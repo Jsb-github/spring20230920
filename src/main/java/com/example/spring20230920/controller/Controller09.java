@@ -41,17 +41,40 @@ public class Controller09 {
     }
 
     @RequestMapping("sub3")
-    public void method3(Model model){
-        model.addAttribute("names", List.of("두식","봉석","희수"));
+    public void method3(Model model) {
+        model.addAttribute("names", List.of("두식", "봉석", "희수"));
 
-        List<String> list1 = List.of("축구","야구","농구");
-        List<String> list2 = List.of("이강인","이정후","조던");
-        List<String> list3 = List.of("1","2","3");
+        var list1 = List.of("무빙", "엘리멘탈");
+        model.addAttribute("list1", list1);
 
-        model.addAttribute("list1",list1);
-        model.addAttribute("mapList",list2);
-        model.addAttribute("cities",list3);
+        var list2 = List.of("korea", "us", "japan");
+        model.addAttribute("mapList1", list2);
 
+        var list3 = List.of("seoul", "jeju", "busan", "incheon");
+        model.addAttribute("cities", list3);
+    }
+
+    @RequestMapping("sub4")
+    public void method4(Model model) {
+        var map1 = Map.of("son", 7, "lee", 19, "kim", 30);
+
+        model.addAttribute("myMap", map1);
+
+        var map2 = Map.of("seoul", "특별시", "busan", "광역시");
+
+        model.addAttribute("cityMap", map2);
+        model.addAttribute("color", Map.of(
+                "red", "#ff0000",
+                "blue", "#0000ff",
+                "black", "#000000"
+        ));
+
+        var map3 = Map.of(
+                "name", "두식",
+                "my name", "봉석",
+                "your-name", "희수"
+        );
+        model.addAttribute("attr3", map3);
 
     }
 
