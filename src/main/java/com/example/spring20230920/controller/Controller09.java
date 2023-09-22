@@ -117,10 +117,10 @@ public class Controller09 {
     @RequestMapping("sub8")
     public void method8(Model model){
         MyDto9 o1 = new MyDto9();
-        o1.setId("shm");
+       // o1.setId("shm");
         o1.setFirstName("손");
         o1.setLastName("흥민");
-        o1.setClassName(17);
+        //o1.setClassName(17);
         o1.setPhoneNumber("010-0000-0000");
 
         model.addAttribute("student",o1);

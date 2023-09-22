@@ -1,5 +1,6 @@
 package com.example.spring20230920.controller;
 
+import com.example.spring20230920.domain.MyDto10;
 import com.example.spring20230920.domain.MyDto9;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -41,4 +42,40 @@ public class Controller10 {
         model.addAttribute("people",
                 Map.of("1st",o1,"2nd",o2));
     }
+
+    @RequestMapping("sub3")
+    public void method03(Model model){
+        MyDto10 o1 = new MyDto10();
+        o1.setName("doosik");
+        o1.setId(3);
+        o1.setFoods(List.of("pizza","burger","milk"));
+        o1.setCars(List.of("play","movie","cart"));
+        model.addAttribute("person1",o1);
+
+    }
+
+    @RequestMapping("sub4")
+    public void method4(Model model){
+        model.addAttribute("myList",List.of("tesla","kia","benz"));
+    }
+
+    @RequestMapping("sub5")
+    public void method5(Model model){
+        model.addAttribute("foodList",List.of("피자","치킨","햄버거","짜장면"));
+        model.addAttribute("names",List.of("두식","봉석","희수","미현"));
+    }
+    @RequestMapping("sub6")
+    public  void method6(Model model){
+        List<MyDto9> list = new ArrayList<>();
+        list.add(new MyDto9(31,"son","hm","football","010"));
+        list.add(new MyDto9(32,"lee","ki","paris","011"));
+        list.add(new MyDto9(33,"김","두식","서울","012"));
+        list.add(new MyDto9(34,"김","봉석","봉석","013"));
+        list.add(new MyDto9(34,"장","희수","제주도","014"));
+
+        model.addAttribute("list",list);
+
+    }
+    
+   
 }
