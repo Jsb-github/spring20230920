@@ -67,11 +67,11 @@ public class Controller10 {
     @RequestMapping("sub6")
     public  void method6(Model model){
         List<MyDto9> list = new ArrayList<>();
-        list.add(new MyDto9(31,"son","hm","football","010"));
-        list.add(new MyDto9(32,"lee","ki","paris","011"));
-        list.add(new MyDto9(33,"김","두식","서울","012"));
-        list.add(new MyDto9(34,"김","봉석","봉석","013"));
-        list.add(new MyDto9(34,"장","희수","제주도","014"));
+//        list.add(new MyDto9(31,"son","hm","football","010"));
+//        list.add(new MyDto9(32,"lee","ki","paris","011"));
+//        list.add(new MyDto9(33,"김","두식","서울","012"));
+//        list.add(new MyDto9(34,"김","봉석","봉석","013"));
+//        list.add(new MyDto9(34,"장","희수","제주도","014"));
 
         model.addAttribute("list",list);
 

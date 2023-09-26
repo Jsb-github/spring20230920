@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class MyDto9 {
-    private int id;
+    private Long id;
     private String firstName;
     private String lastName;
     private String className;
