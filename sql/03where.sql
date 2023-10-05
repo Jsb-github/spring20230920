@@ -76,3 +76,12 @@ WHERE Country = 'japan';
 SELECT CategoryName
 FROM categories
 WHERE CategoryID = 2;
+
+
+
+SELECT ProductID,ProductName,Unit,Price
+FROM  products;
+
+SELECT *
+FROM customers
+WHERE Country = 'spain';
