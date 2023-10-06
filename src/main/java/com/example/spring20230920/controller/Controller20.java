@@ -285,6 +285,7 @@ public class Controller20 {
                 +
                 """
                     )
+                ORDER BY Country ASC 
                 """;
 
                 Connection connection = dataSource.getConnection();
