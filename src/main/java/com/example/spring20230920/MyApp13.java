@@ -16,13 +16,13 @@ public class MyApp13 {
     }
 }
 
-@Component
-class MyClass26{
-
-    @PostConstruct  //di() 종료 후 바로 실행
-    //dependency inject(DI, 의존성 주입)
-    public void method1(){
-        System.out.println("MyClass26.method1");
-    }
-}
+//@Component
+//class MyClass26{
+//
+//    @PostConstruct  //di() 종료 후 바로 실행
+//    //dependency inject(DI, 의존성 주입)
+//    public void method1(){
+//        System.out.println("MyClass26.method1");
+//    }
+//}
 
