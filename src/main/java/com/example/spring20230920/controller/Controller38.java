@@ -109,6 +109,6 @@ public class Controller38 {
     @GetMapping("sub7")
     public MyDto45 method7(Integer id){
 
-        return dao.selectProductByIdId2(id);
+        return dao.selectProductById2(id);
     }
 }

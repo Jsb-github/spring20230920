@@ -30,5 +30,5 @@ public interface MyDao8 {
                WHERE p.ProductID = #{id}
                 
             """)
-    MyDto45 selectProductByIdId2(Integer id);
+    MyDto45 selectProductById2(Integer id);
 }
