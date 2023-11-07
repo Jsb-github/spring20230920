@@ -19,4 +19,7 @@ public interface MyDao10 {
             WHERE CustomerID =50
             """)
     MyDto34Customer getCustomer();
+
+
+
 }
