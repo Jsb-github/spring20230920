@@ -11,6 +11,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 public class MyDto18Employee {
 
+    private Integer id;
     private String lastName;
     private String firstName;
     private LocalDate birthDate;
